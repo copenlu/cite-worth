@@ -8,6 +8,11 @@ The data is available for download via this link: [https://drive.google.com/driv
 
 The data is derived from the [S2ORC dataset](https://github.com/allenai/s2orc), specifically the 20200705v1 release of the data. It is licensed under the [CC By-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/) license.   
 
+## Pretrained models
+We releases two pretrained models from the paper, available in the [HuggingFace model hub](https://huggingface.co/copenlu). The two models are:
+ - `copenlu/citebert`: SciBERT trained on citation detection and masked language modeling from CiteWorth data
+ - `copenlu/citebert-cite-only`: SciBERT trained on citation detection only from CiteWorth data
+
 ## Environment setup
 We recommend using Anaconda to create your environment. After installing conda, run the following to create the environment.
 ```[bash]
