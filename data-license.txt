@@ -1,0 +1,2 @@
+Data is licensed under the CC By-NC 2.0 (https://creativecommons.org/licenses/by-nc/2.0/) license.
+The original data come from the 20200705v1 release of the Semantic Scholar Open Research Corpus dataset (https://github.com/allenai/s2orc).

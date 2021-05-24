@@ -1,0 +1,7 @@
+*wandb*
+*.pth
+*__pycache__*
+*.npy
+*.npz
+*.pth
+*.th
