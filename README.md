@@ -12,6 +12,23 @@ The data is available for download via this link: [https://drive.google.com/driv
 
 The data is derived from the [S2ORC dataset](https://github.com/allenai/s2orc), specifically the 20200705v1 release of the data. It is licensed under the [CC By-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/) license.   
 
+### Dataset Structure
+
+The data is structured as a json lines file, where each line contains a full paragraph of data. The fields in the json are as follows
+ - `paper_id`: The S2ORC paper ID where the paragraph comes from
+ - `section_idx`: An index into the section array in the original S2ORC data
+ - `file_index`: The volume in the S2ORC dataset that the paper belongs to
+ - `file_offset`: Byte offset to the start of the paper json in the S2ORC paper PDF file
+ - `mag_field_of_study`: The field of study to which a paper belongs (an array, but each paper belongs to a single field)
+ - `original_text`: The original text of the paragraph
+ - `section_title`: Title of the section to which the paragraph belongs
+ - `samples`: An array containing dicts of the cleaned sentences for the paragraph, in order. The fields for each dict are as follows
+   - `text`: The cleaned text for the sentence
+   - `label`: Label for the sentence, either `check-worthy` for cite-worthy sentences or `non-check-worthy` non-cite-worthy sentences
+   - `original_text`: The original sentence text
+   - `ref_ids`: List of the reference IDs in the S2ORC dataset for papers cited in this sentence
+   - `citation_text`: List of all citation text in this sentence
+
 ## Pretrained models
 We releases two pretrained models from the paper, available in the [HuggingFace model hub](https://huggingface.co/copenlu). The two models are:
  - `copenlu/citebert`: SciBERT trained on citation detection and masked language modeling from CiteWorth data
