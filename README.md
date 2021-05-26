@@ -1,6 +1,8 @@
 # CiteWorth
 Data and code for the paper "CiteWorth: Cite-Worthiness Detection for Improved Scientific Document Understanding"
 
+https://arxiv.org/abs/2105.10912
+
 Dustin Wright and Isabelle Augenstein
 
 In Findings of ACL 2021
