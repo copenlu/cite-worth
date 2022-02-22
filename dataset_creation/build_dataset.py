@@ -307,11 +307,9 @@ if __name__ == "__main__":
     start = time.time()
     pool = Pool(8)
 
-    # with open(f"{data_loc}/citation_needed_data_v4.tsv", 'wt') as f:
-    #     f.write("text\toriginal_citation\tlabel\n")
     version = 1
     completed = []
-    with open(f'data/citation_needed_data_contextualized_with_removal_v{version}_completed.txt') as f:
+    with open(f'data/citation_needed_data_contextualized_with_removal_v{version}_completed.txt', 'a+') as f:
         completed = set([int(l.strip()) for l in f])
 
     run_list = [i for i in range(100) if i not in completed and i != 12] # skip 12 since it never finishes
