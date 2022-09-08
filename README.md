@@ -22,6 +22,8 @@ Alternatively, the data is available for download via this link: [https://drive.
 
 The data is derived from the [S2ORC dataset](https://github.com/allenai/s2orc), specifically the 20200705v1 release of the data. It is licensed under the [CC By-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/) license.   
 
+The code is licensed under the MIT license.
+
 ### Dataset Structure
 
 The data is structured as a json lines file, where each line contains a full paragraph of data. The fields in the json are as follows
